@@ -12,7 +12,7 @@ import HomeDetails from '@/components/HomeDetails';
 import HomePlans from '@/components/HomePlans';
 // @ is an alias to /src
 export default {
-    name: 'Home',
+    name: 'home',
     components: {
         HomeHero,
         HomeDetails,

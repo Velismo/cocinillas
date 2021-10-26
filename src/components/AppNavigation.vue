@@ -9,27 +9,27 @@
         >
             <v-list>
                 <template v-for="(item, index) in items">
-                    <v-list-title :key="index">
-                        <v-list-title-content>
+                    <v-list-tile :key="index">
+                        <v-list-tile-content>
                             {{ item.title }}
-                        </v-list-title-content>
-                    </v-list-title>
+                        </v-list-tile-content>
+                    </v-list-tile>
                     <v-divider :key="`divider-${index}`"></v-divider>
                 </template>
             </v-list>
         </v-navigation-drawer>
         <v-toolbar app color="brown darken-4" dark>
             <v-toolbar-side-icon
-                class="hiddem-md-and-up"
+                class="hidden-md-and-up"
                 @click="drawer = !drawer"
             ></v-toolbar-side-icon>
             <v-spacer class="hidden-md-and-up"></v-spacer>
-            <v-toolbar-title>{{ AppTitle }}</v-toolbar-title>
+            <v-toolbar-title>{{ appTitle }}</v-toolbar-title>
             <v-btn flat class="hidden-sm-and-down">Menú</v-btn>
             <v-spacer class="hidden-sm-and-down"></v-spacer>
-            <v-btn flat class="hidden-sm-and-down">SIGN IN</v-btn>
+            <v-btn flat class="hidden-sm-and-down">ACCEDE</v-btn>
             <v-btn color="brown lighten-3" class="hidden-sm-and-down"
-                >JOIN</v-btn
+                >REGÍSTRATE</v-btn
             >
         </v-toolbar>
     </span>
@@ -40,7 +40,7 @@ export default {
     name: 'AppNavigation',
     data() {
         return {
-            appTitle: 'Preparar comidita',
+            appTitle: 'Cocinillas',
             drawer: false,
             items: [
                 { title: 'Menú' },

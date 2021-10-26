@@ -1,5 +1,5 @@
 <template>
-    <v-container fluid fill-height class="home-hero" style="max-height: 100vh">
+    <v-container fluid fill-height class="home-hero">
         <v-layout justify-center align-center column pa-5>
             <div class="display-4 font-weight-black white--text text-xs-center">
                 COMIDITA SALUDABLE
@@ -34,9 +34,9 @@ export default {
 
 <style scoped>
 .home-hero {
-    background: url('http://source.unsplash.com/0BhSKStVtdM');
+    background: url('https://inlanderrestaurantweek.com/wp-content/uploads/2020/02/Fancy-plate-food-1024x576.jpg');
     background-size: cover;
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 </style>
