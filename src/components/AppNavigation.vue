@@ -24,17 +24,18 @@
                 @click="drawer = !drawer"
             ></v-toolbar-side-icon>
             <v-spacer class="hidden-md-and-up"></v-spacer>
-            <v-toolbar-title>{{ appTitle }}</v-toolbar-title>
-            <v-btn flat class="hidden-sm-and-down">Menú</v-btn>
+            <router-link to="/">
+                <v-toolbar-title to="/">{{ appTitle }}</v-toolbar-title>
+            </router-link>
+            <v-btn flat class="hidden-sm-and-down" to="/menu">Menú</v-btn>
             <v-spacer class="hidden-sm-and-down"></v-spacer>
-            <v-btn flat class="hidden-sm-and-down">ACCEDE</v-btn>
-            <v-btn color="brown lighten-3" class="hidden-sm-and-down"
-                >REGÍSTRATE</v-btn
+            <v-btn flat class="hidden-sm-and-down" to="/sign-in">Accede</v-btn>
+            <v-btn color="brown lighten-3" class="hidden-sm-and-down" to="/join"
+                >Regístrate</v-btn
             >
         </v-toolbar>
     </span>
 </template>
-
 <script>
 export default {
     name: 'AppNavigation',
@@ -43,13 +44,18 @@ export default {
             appTitle: 'Cocinillas',
             drawer: false,
             items: [
-                { title: 'Menú' },
-                { title: 'Accede' },
-                { title: 'Regístrate' },
+                { title: 'Menu' },
+                { title: 'Profile' },
+                { title: 'Sign In' },
+                { title: 'Join' },
             ],
         };
     },
 };
 </script>
-
-<style scoped></style>
+<style scoped>
+a {
+    color: white;
+    text-decoration: none;
+}
+</style>
