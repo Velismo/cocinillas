@@ -1,6 +1,12 @@
 <template>
     <span>
-        <v-navigation-drawer app v-model="drawer" class="brown lighten-2" dark disable-resize-watcher>
+        <v-navigation-drawer
+            app
+            v-model="drawer"
+            class="brown lighten-2"
+            dark
+            disable-resize-watcher
+        >
             <v-list>
                 <template v-for="(item, index) in items">
                     <v-list-title :key="index">
@@ -22,7 +28,9 @@
             <v-btn flat class="hidden-sm-and-down">Menú</v-btn>
             <v-spacer class="hidden-sm-and-down"></v-spacer>
             <v-btn flat class="hidden-sm-and-down">SIGN IN</v-btn>
-            <v-btn color="brown lighten-3" class="hidden-sm-and-down">JOIN</v-btn>
+            <v-btn color="brown lighten-3" class="hidden-sm-and-down"
+                >JOIN</v-btn
+            >
         </v-toolbar>
     </span>
 </template>
@@ -40,9 +48,8 @@ export default {
                 { title: 'Regístrate' },
             ],
         };
-    }
+    },
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

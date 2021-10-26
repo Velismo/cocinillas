@@ -17,6 +17,6 @@ export default {
         HomeHero,
         HomeDetails,
         HomePlans,
-    }
+    },
 };
 </script>
